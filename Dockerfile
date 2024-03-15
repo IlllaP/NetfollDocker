@@ -16,10 +16,8 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/* /var/cache/apt/archives/* /tmp/*
 
 # Clone the repository
-RUN git clone https://github.com/MXRRI/Netfoll
-
-# Set working directory
 WORKDIR /Netfoll
+RUN git clone https://github.com/MXRRI/Netfoll .
 
 # Install Python dependencies
 RUN pip install --no-warn-script-location --no-cache-dir -r requirements.txt
