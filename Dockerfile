@@ -17,7 +17,7 @@ RUN apt-get update \
 
 # Clone the repository
 WORKDIR /Netfoll
-RUN git clone https://github.com/MXRRI/Netfoll/tree/0.3.7 .
+RUN git clone https://github.com/IlllaP/Netfoll .
 
 # Install Python dependencies
 RUN pip install --no-warn-script-location --no-cache-dir -r requirements.txt
